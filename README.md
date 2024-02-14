@@ -3,7 +3,7 @@
 Vous trouverez ici des exemples ainsi que certaines informations utiles pour les ateliers Raspberry Pi du projet Transversal (1T Ephec).
 
 ## Ressources utiles:
-- Formation groupes : http://tiny.cc/transversal1T2023
+- Formation groupes : todo
 - Teams (communications lors des séances plus communications informelles): "projet transversal" dans votre Teams
 - Mail pour les communications officielles
 - Exemples de code/ résolution d'exercices (par Séance + d'autre pas classé): les dossiers 'exemples' et 'exemples_old' de ce repository
@@ -12,16 +12,14 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 - intro au python (vous n'aurez pas besoin de grand chose): https://wiki.python.org/moin/BeginnersGuide/Programmers
 ==> mais beaucoup de choses existe sur internet, n'hésitez pas à chercher
 
-## Configurations réseau
-Les Raspberry Pi ont un numéro(unique) sur leur carte SD, ce numéro défini leur Hostname (et, anciennement, leur IPv4 statique):
-* ~~Leur IP(pour les cartes configurée pour) est: `192.168.20.[numero_unique] / 24`~~
-* Leur hostname est: `pi[numero_unique]`.
+## Conection au Raspberry Pi
+
+* Leur hostname est:  écrit sur leur carte SD et aurra la forme `pi[numero_unique]`, par exemple `pi06`
 * Leur username est: `pi`
 * Leur password est: `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
 
 Une fois votre Raspberry allumé et branché avec un câble réseau (dans votre ordi ou dans le switch), vous pouvez vous y connecter (en ssh), soit:
 * En utilisant juste son hostname: ex: `ssh pi@pi10` (il se connectera en IPv6 en utilisant le protocole de *neighbours discovery*)
-* ~~en configurant une IP statique sur votre ordinateur (si vous êtes en câblé) pour être dans le même sous-réseau que votre Raspberry Pi) puis utilisez l'ipv4 du RPi.~~
 * Si le routeur + switchs (+ wifi ?) sont déjà en place (à partir du deuxième atelier), il y aura un serveur DHCP (avec un accès internet) et vous pourez aussi (pas obligatoire) utiliser l'IPv4 du Raspberry. Ex: `ssh pi@192.168.20.242` (note: l'ip commencera toujour par *192.168.20._ *)
 
 ==> Votre raspberry pi **ET** votre ordinateur doivent être branché sur le routeur/switch. 
@@ -35,7 +33,7 @@ Note sur le wifi: **Si** il y a une connection wifi, elle sera probablement pas 
 * interface d'administration du Mikrotik (si on utilise des Mikrotik) : `ephec`  (il n'est normalement pas nécessaire d'y accéder)
 
 
-## Choses à upgrader/installer sur le raspberry pi (lorsque votre raspberry aura internet ==> à partir de la deuxième séance)
+## Choses à upgrader/installer sur le raspberry pi si pas présent 
 ```
 sudo su
 apt update
@@ -46,20 +44,17 @@ pip install Flask
 
 ## Conseils
 - [une fois tmux installé] lancez tmux dés que vous êtes connecté ainsi, si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez
-- [une fois git installé] vous pouvez faire un `git clone https://github.com/xavier-dubruille/ephec-rpi.git` pour récupérer tout ce repository (ainsi que les exemples)
+- [une fois git installé] vous pouvez faire un `git clone https://github.com/EPHEC-TECH-RESEARCH/projet-transversal.git` pour récupérer tout ce repository (ainsi que les exemples)
 - les erreurs python sont vite arrivée et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copier sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
-
-## Note sur les cartes SD
-Les cartes avec un numéro au dessus de 50 (la majorité des cartes cette année) sont plus vielle et un peu moins fiable.  Normalement, ca n'impacte pas la lecture, mais l'écriture (ex: lors d'un reboot, il est possible que vos données n'aient pas persisté) ==> faites donc bien des backups sur votre PC et, au moindre comportement suspect, n'hésitez pas à venir changer votre carte ==> les professeurs ont quelques cartes avec tout le necessaire déjà installé (donc pas la peine de repasser par l'étape précédente)
 
 
 ## Déroulement des séances
-### Séance 1 (jeudi 14 février)
+### Séance 1 (jeudi 15 février)
 Intro au Python, au Raspberry Pi. Allumage d'une led ainsi d'une utilisation d'un bouton poussoir.
 Des exemples de code sont disponible dans le directory "exemples par scéance".
 Ressource utile: https://gpiozero.readthedocs.io/en/stable/ ( + google ;)
 
-### Séance 2 (jeudi 2 mars)
+### Séance 2 (jeudi ?)
 * (Possible: Utilisation des Microtik )
 * Installation de certaines choses sur votre Rpi (tel que Flask)
 * Intro à Flask: création d'un serveur Web + un peu plus de Python
@@ -71,7 +66,7 @@ Note : Une difficultée de cette séance est de devoir gérer le serveur Web en 
 
 Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre senario, ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ... 
 
-### Séance 3 (jeudi 9 mars)
+### Séance 3 (jeudi ?)
 * Quelques nouveaux capteurs sont introduit
     * codeur rotatif 
     * capteurs proximité 
@@ -81,7 +76,7 @@ Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a auss
     * Et d'autres ...
 * Définition et travail sur votre projet
 
-### Séance 4 (jeudi 23 mars)
+### Séance 4 (jeudi 23 ?)
 - Travail sur votre projet
 - Présentation / Jury
 
