@@ -30,4 +30,4 @@ def index():
 </html> """
 
 # notez que si vous laisser le port 80, il faudra le lancer avec sudo
-app.run(host='0.0.0.0', port=80, debug=True)
+app.run(host='0.0.0.0', port=80)
