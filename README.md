@@ -76,7 +76,7 @@ Ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus.
     * Et d'autres ...
 * Définition et travail sur votre projet
 
-### Séance 4 (vendredi avril 2025)
+### Séance 4 (vendredi 4 avril 2025)
 - Travail sur votre projet
 - Présentation / Jury
 
