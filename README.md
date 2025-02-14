@@ -43,9 +43,10 @@ pip install Flask
 ```
 
 ## Conseils
-- [une fois tmux installé] lancez tmux dés que vous êtes connecté, ainsi si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez
+- [une fois tmux installé] lancez tmux dès que vous êtes connecté, ainsi si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez.
 - [une fois git installé] vous pouvez faire un `git clone https://github.com/EPHEC-TECH-RESEARCH/projet-transversal.git` pour récupérer tout ce repository (ainsi que les exemples)
-- les erreurs python sont vite arrivée et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copier sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
+- les erreurs python sont vite arrivées et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copiez sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
+- avant d'éteindre le Raspberry, tapez la commande sudo shutdown now et attendez que la LED verte ait fini de clignoter
 
 
 ## Déroulement des séances
