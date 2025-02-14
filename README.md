@@ -48,12 +48,12 @@ pip install Flask
 
 
 ## Déroulement des séances
-### Séance 1 (jeudi 15 février)
+### Séance 1 (vendredi 14 février 2025)
 Intro au Python, au Raspberry Pi. Allumage d'une led ainsi que l'utilisation d'un bouton poussoir.
 Des exemples de code sont disponible dans le directory "exemples par scéance".
 Ressource utile: https://gpiozero.readthedocs.io/en/stable/ ( + google ;)
 
-### Séance 2 (jeudi ?)
+### Séance 2 (vendredi 21 février 2025)
 * (Possible: Utilisation des Microtik )
 * Installation de certaines choses sur votre Rpi (tel que Flask)
 * Intro à Flask: création d'un serveur Web + un peu plus de Python
@@ -66,7 +66,7 @@ Note : Une difficultée de cette séance est de devoir gérer le serveur Web en 
 Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre senario.  
 Ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ... 
 
-### Séance 3 (jeudi ?)
+### Séance 3 (vendredi 21 mars 2025)
 * Quelques nouveaux capteurs sont introduit
     * codeur rotatif 
     * capteurs proximité 
@@ -76,7 +76,7 @@ Ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus.
     * Et d'autres ...
 * Définition et travail sur votre projet
 
-### Séance 4 (jeudi 23 ?)
+### Séance 4 (vendredi avril 2025)
 - Travail sur votre projet
 - Présentation / Jury
 
