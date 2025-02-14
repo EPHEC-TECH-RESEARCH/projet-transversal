@@ -3,7 +3,8 @@
 Vous trouverez ici des exemples ainsi que certaines informations utiles pour les ateliers Raspberry Pi du projet Transversal (1T Ephec).
 
 ## Ressources utiles:
-- Formation groupes : [lien formation groupe](https://ephec.sharepoint.com/:x:/r/sites/Projettransversal2024/Documents%20partages/General/Liste%20%C3%A9tudiants%20projet%20transversal%201T.xlsx?d=wc04cc85802ab476c9e97e3fde8e4c13e&csf=1&web=1&e=UJCW3m)
+- Formation groupes : [lien formation groupe](![image](https://github.com/user-attachments/assets/9e32676f-76ad-4985-b861-8b9d5aa75f7d)
+)
 - Teams (communications lors des séances plus communications informelles): "projet transversal" dans votre Teams
 - Mail pour les communications officielles
 - Exemples de code/ résolution d'exercices (par Séance + d'autre pas classé): les dossiers 'exemples' et 'exemples_old' de ce repository
