@@ -6,7 +6,7 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 - Formation groupes : [lien formation groupe](https://ephec.sharepoint.com/:x:/r/sites/Projettransversal2025/_layouts/15/Doc.aspx?sourcedoc=%7B731BDD96-0292-44ED-B424-74DCF24D171E%7D&file=Projet%20transversal%202025%20Etudiants.xlsx&action=default&mobileredirect=true)
 - [Teams](https://teams.microsoft.com/l/channel/19%3AApZFu9Z_XcjK-wj33KfWrv3_XhxLgSGDhwzREq3Ekdg1%40thread.tacv2/?groupId=0672944d-af5e-44ff-bfb0-c73e93ac0139&tenantId=21936fc0-be19-4e1b-ad89-4def5c23b4cb) (communications lors des séances plus communications informelles): "projet transversal" dans votre Teams
 - Mail pour les communications officielles
-- Détails techniques pour la [LED RGM](https://github.com/EPHEC-TECH-RESEARCH/projet-transversal/blob/main/LED%20RGB%20d%C3%A9tails%20techniques.pdf)
+- Détails techniques pour la [LED RGB](https://github.com/EPHEC-TECH-RESEARCH/projet-transversal/blob/main/LED%20RGB%20d%C3%A9tails%20techniques.pdf)
 - Exemples de code/ résolution d'exercices (par Séance + d'autre pas classé): les dossiers 'exemples' et 'exemples_old' de ce repository
 - librairie python pour utilisation des gpio: https://gpiozero.readthedocs.io/en/stable/
 - Une 'Cheat Sheet' qui n'a peut etre pas été finie/imprimé, mais dont les éléments la constituant se trouvant dans le dossier 'Cheat Sheet' de ce repository.
