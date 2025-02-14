@@ -3,8 +3,7 @@
 Vous trouverez ici des exemples ainsi que certaines informations utiles pour les ateliers Raspberry Pi du projet Transversal (1T Ephec).
 
 ## Ressources utiles:
-- Formation groupes : [lien formation groupe](https://ephec.sharepoint.com/:x:/r/sites/Projettransversal2025/Documents%20partages/General/Projet%20transversal%202025%20Etudiants.xlsx?d=w731bdd96029244edb42474dcf24d171e&csf=1&web=1&e=WrJC1E)
-- [Matériel](https://github.com/user-attachments/assets/9e32676f-76ad-4985-b861-8b9d5aa75f7d)
+- Formation groupes : [lien formation groupe](https://ephec.sharepoint.com/:x:/r/sites/Projettransversal2024/Documents%20partages/General/Liste%20%C3%A9tudiants%20projet%20transversal%201T.xlsx?d=wc04cc85802ab476c9e97e3fde8e4c13e&csf=1&web=1&e=UJCW3m)
 - Teams (communications lors des séances plus communications informelles): "projet transversal" dans votre Teams
 - Mail pour les communications officielles
 - Exemples de code/ résolution d'exercices (par Séance + d'autre pas classé): les dossiers 'exemples' et 'exemples_old' de ce repository
@@ -13,25 +12,24 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 - intro au python (vous n'aurez pas besoin de grand chose): https://wiki.python.org/moin/BeginnersGuide/Programmers
 ==> mais beaucoup de choses existe sur internet, n'hésitez pas à chercher
 
-## Conection au Raspberry Pi
+## Connection au Raspberry Pi
 
-* Leur hostname est:  écrit sur leur carte SD et aurra la forme `pi[numero_unique]`, par exemple `pi06`
-* Leur username est: `pi`
-* Leur password est: `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
+* Leur hostname est :  écrit sur leur carte SD et aurra la forme `pi[numero_unique]`, par exemple `pi06`
+* Leur username est : `pi`
+* Leur password est : `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
 
 Une fois votre Raspberry allumé et branché avec un câble réseau (dans votre ordi ou dans le switch), vous pouvez vous y connecter (en ssh), soit:
 * En utilisant juste son hostname: ex: `ssh pi@pi10` (il se connectera en IPv6 en utilisant le protocole de *neighbours discovery*)
 * Si le routeur + switchs (+ wifi ?) sont déjà en place (à partir du deuxième atelier), il y aura un serveur DHCP (avec un accès internet) et vous pourez aussi (pas obligatoire) utiliser l'IPv4 du Raspberry. Ex: `ssh pi@192.168.20.242` (note: l'ip commencera toujour par *192.168.20._ *)
 
 ==> Votre raspberry pi **ET** votre ordinateur doivent être branché sur le routeur/switch. 
-Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demander à quelqu'un d'autre (par exemple un autre groupe ? Tant qu'il est branché au switch ...), d'utiliser la méthode 1 pour vous récuperer son IP (note: pour connaitre les addresses IP sur linux, il suffit de taper `ip a`)
+Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demander à quelqu'un d'autre (par exemple un autre groupe ? Tant qu'il est branché au switch ...), d'utiliser la méthode 1 pour vous récuperer son IP (note: pour connaitre les addresses IP sur Linux, il suffit de taper `ip a`)
 
 
-Note sur le wifi: **Si** il y a une connection wifi, elle sera probablement pas stable (car beaucoup d'interférences et pas prévue pour supporter beaucoup de connections simultanées) ==>  Evitez donc de l'utiliser autant que possible et, si vous devez l'utiliser, limitez le trafique !   Cette connection wifi peu avoir du sens pour accèder, depuis votre téléphone, à la page web que vous aurez construite ou si **vraiment** vous n'avez **absolument** pas d'autre solution pour brancher votre ordinateur avec un cable.
+> Note sur le wifi: **Si** il y a une connection wifi, elle sera probablement pas stable (car beaucoup d'interférences et pas prévue pour supporter beaucoup de connections simultanées) ==>  Evitez donc de l'utiliser autant que possible et, si vous devez l'utiliser, limitez le trafique !   Cette connection wifi peu avoir du sens pour accèder, depuis votre téléphone, à la page web que vous aurez construite ou si **vraiment** vous n'avez **absolument** pas d'autre solution pour brancher votre ordinateur avec un cable.
 
 #### Autre Passwords
 * wifi (si il y en a) : `ephecephec`
-* interface d'administration du Mikrotik (si on utilise des Mikrotik) : `ephec`  (il n'est normalement pas nécessaire d'y accéder)
 
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent 
@@ -44,14 +42,14 @@ pip install Flask
 ```
 
 ## Conseils
-- [une fois tmux installé] lancez tmux dés que vous êtes connecté ainsi, si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez
+- [une fois tmux installé] lancez tmux dés que vous êtes connecté, ainsi si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez
 - [une fois git installé] vous pouvez faire un `git clone https://github.com/EPHEC-TECH-RESEARCH/projet-transversal.git` pour récupérer tout ce repository (ainsi que les exemples)
 - les erreurs python sont vite arrivée et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copier sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
 
 
 ## Déroulement des séances
 ### Séance 1 (jeudi 15 février)
-Intro au Python, au Raspberry Pi. Allumage d'une led ainsi d'une utilisation d'un bouton poussoir.
+Intro au Python, au Raspberry Pi. Allumage d'une led ainsi que l'utilisation d'un bouton poussoir.
 Des exemples de code sont disponible dans le directory "exemples par scéance".
 Ressource utile: https://gpiozero.readthedocs.io/en/stable/ ( + google ;)
 
@@ -65,7 +63,8 @@ Ressource utile: https://gpiozero.readthedocs.io/en/stable/ ( + google ;)
 Note : Une difficultée de cette séance est de devoir gérer le serveur Web en même temps, ce qui implique que la partie 'electronique' du code ne peux pas bloquer la partie Web...
 
 
-Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre senario, ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ... 
+Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre senario.  
+Ex: une led n'est pas compliqué, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ... 
 
 ### Séance 3 (jeudi ?)
 * Quelques nouveaux capteurs sont introduit
@@ -122,12 +121,11 @@ J'en oublie peut-etre, mais voici les capteurs disponible par catégorie:
 
 L'information de vitesse peut alors être déduite de la variation de la position par rapport au temps. Plus le codeur rotatif tourne lentement, plus la déduction de vitesse perd en précision."
 
-Les codeurs rotatif disponible ont 4 pin alors que dans l'exemple de 'gpio zero' il n'y en a que 3: c'est parceque ceux-ci ont également un bouton integré: c'est la pin nommée 'sw'.  Les pins nomées 'Data' et 'Clk' peuvent être inter-changé (ca influcera sur quel sens de rotation est concidéré comme le positif.
+Les codeurs rotatif disponible ont 4 pin alors que dans l'exemple de 'gpio zero' il n'y en a que 3: c'est parceque ceux-ci ont également un bouton integré: c'est la pin nommée 'sw'.  Les pins nomées 'Data' et 'Clk' peuvent être inter-changé (ça influera sur la détermination du sens de rotation concidéré comme sens positif).
 
 # Le Servo moteur
-Le fil rouge est pour le vcc (en 5v), le brun est le Ground (0v) et le jaune est le signal (celui qui doit aller sur votre GPIO)
+Le fil rouge est pour le vcc (en 5v), le brun est le Ground (0v) et le jaune est le signal (celui qui doit aller sur votre GPIO)  
 Note: il y en a moins disponible
 
 # Le capteur "nivau d'eau/floteur"
 Il se comporte comme un button.  Lorsque l'eau soulève le floteur le circuit est fermé.
-
