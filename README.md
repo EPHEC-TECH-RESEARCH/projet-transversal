@@ -11,7 +11,7 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 - librairie python pour utilisation des gpio: https://gpiozero.readthedocs.io/en/stable/
 - Une 'Cheat Sheet' qui n'a peut etre pas été finie/imprimé, mais dont les éléments la constituant se trouvant dans le dossier 'Cheat Sheet' de ce repository.
 - intro au python (vous n'aurez pas besoin de grand chose): https://wiki.python.org/moin/BeginnersGuide/Programmers
-==> mais beaucoup de choses existe sur internet, n'hésitez pas à chercher
+==> mais beaucoup de choses existent sur internet, n'hésitez pas à chercher
 
 ## Connection au Raspberry Pi
 
@@ -34,6 +34,7 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent 
+Remarque : il faut être connecté à Internet pour que cela fonctionne
 ```
 sudo su
 apt update
