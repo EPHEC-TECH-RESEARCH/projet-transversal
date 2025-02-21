@@ -1,6 +1,6 @@
 from flask import Flask, redirect
 from gpiozero import *
-
+Dans cet exemple, la page permet d'intergir avec les sorties du raspberry pi
 app = Flask(__name__)
 led = LED(21)
 
