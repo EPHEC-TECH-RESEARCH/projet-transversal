@@ -1,5 +1,5 @@
 from flask import Flask
-
+# Le code ci-dessous instencie un serveur flask sur votre raspberry.
 # D'abord on crée notre application Flask (vous n'avez rien à changer)
 app = Flask(__name__)
 
