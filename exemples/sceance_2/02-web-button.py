@@ -1,6 +1,6 @@
 from flask import Flask
 from gpiozero import Button
-
+# dans cet exemple, la page web réagit au bouton
 button = Button(20)
 
 # on crée un tableau avec une seule valeur
