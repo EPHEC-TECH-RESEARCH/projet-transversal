@@ -1,7 +1,8 @@
 from gpiozero import AngularServo
 from time import sleep
 
-servo = AngularServo(18, min_angle=-90, max_angle=90)
+# le servo moteur du projet transversal n'accepte pas les paramètres standards. Utilisez :
+servo = AngularServo(18, min_angle=-90, max_angle=90,min_pulse_width=0.5e-3,max_pulse_width=2.5e-3)
 
 while True:
     print('-90')
