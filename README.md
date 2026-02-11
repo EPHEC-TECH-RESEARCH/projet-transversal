@@ -19,6 +19,11 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 - Leur hostname est : écrit sur leur carte SD et aura la forme `pi[numero_unique]`, par exemple `pi06`
 - Leur username est : `pi`
 - Leur password est : `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
+- Il se peut que vous ayez une erreur du type :
+  ```
+  C:\Users\lemai>ssh pi@pi01 ssh: connect to host pi01 port 22: Unknown error
+  ```
+  Patientez un peu puis réessayer la commande
 
 Une fois votre Raspberry allumé et branché avec un câble réseau (dans votre ordi ou dans le switch), vous pouvez vous y connecter (en ssh), soit:
 
@@ -48,7 +53,7 @@ pip install Flask
 
 ## Conseils
 
-- [une fois tmux installé] lancez tmux dès que vous êtes connecté, ainsi si vous perdez la connection, vous pourrez, en vous reconnectant, tapper `tmux a`, et revenir là où vous étiez.
+- [une fois tmux installé] lancez tmux dès que vous êtes connecté, ainsi si vous perdez la connection, vous pourrez, en vous reconnectant, taper `tmux a`, et revenir là où vous étiez.
 - [une fois git installé] vous pouvez faire un `git clone https://github.com/EPHEC-TECH-RESEARCH/projet-transversal.git` pour récupérer tout ce repository (ainsi que les exemples)
 - les erreurs python sont vite arrivées et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copiez sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
 - avant d'éteindre le Raspberry, tapez la commande sudo shutdown now et attendez que la LED verte ait fini de clignoter
