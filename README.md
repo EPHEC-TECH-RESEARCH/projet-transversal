@@ -101,17 +101,22 @@ en remplaçant *enp1s0* par le nom de votre interface réseau ethernet
 Remarque : il faut être connecté à Internet pour que cela fonctionne
 
 ```
-sudo su
 mkdir transversal
 cd transversal
 python -m venv .venv
 . .venv/bin/activate
 pip install flask
+```
+
+[optionnel] Vous pouvez installer aussi des trucs pour vous faciliter la vie 
+
+```
+sudo su
 apt update
 apt dist-upgrade -y
-apt install -y python3-pip  git tmux vim bpython
-pip install Flask
+apt install -y git tmux vim
 ```
+
 
 ## Conseils
 
@@ -123,15 +128,14 @@ pip install Flask
 
 ## Déroulement des séances
 
-### Séance 1 (vendredi 14 février 2025)
+### Séance 1 
 
 Intro au Python, au Raspberry Pi. Allumage d'une led ainsi que l'utilisation d'un bouton poussoir.
 Des exemples de code sont disponible dans le directory "exemples par scéance".
 Ressource utile: https://gpiozero.readthedocs.io/en/stable/ ( + google ;)
 
-### Séance 2 (vendredi 21 février 2025)
+### Séance 2
 
-- (Possible: Utilisation des Microtik )
 - Installation de certaines choses sur votre Rpi (tel que Flask)
 - Intro à Flask: création d'un serveur Web + un peu plus de Python
 - Approfondissement de l'utilisation de gpiozero + quelques notions supplémentaire sur les rpi et l'électronique
@@ -141,7 +145,7 @@ Note : Une difficultée de cette séance est de devoir gérer le serveur Web en 
 Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre scénario.  
 Ex: une led n'est pas compliquée, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ...
 
-### Séance 3 (vendredi 21 mars 2025)
+### Séance 3 
 
 - Quelques nouveaux capteurs sont introduit
   - codeur rotatif
@@ -152,7 +156,7 @@ Ex: une led n'est pas compliquée, mais afficher un nombre en binaire l'est plus
   - Et d'autres ...
 - Définition et travail sur votre projet
 
-### Séance 4 (vendredi 4 avril 2025)
+### Séance 4
 
 - Travail sur votre projet
 - Présentation / Jury
