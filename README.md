@@ -16,6 +16,7 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 
 ## Connection au Raspberry Pi
 
+
 - Leur hostname est : écrit sur leur carte SD et aura la forme `pi[numero_unique]`, par exemple `pi06`
 - Leur username est : `pi`
 - Leur password est : `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
@@ -38,6 +39,13 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 #### Autre Passwords
 
 - wifi (si il y en a) : `ephecephec`
+
+#### Sous Linux
+Sous linux, il faut se connecter en ipv6.  Hors, l'adresse n'est pas connue.  Pour la découvir, voici la procédure:
+- Ouuvrez votre terminal et tapez
+```
+ip a
+```
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
