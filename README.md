@@ -57,7 +57,7 @@ ping6 -I *enp1s0* ff02::01
 en remplaçant *enp1s0* par le nom de votre interface réseau ethernet
 
 - Cette commande vous donnera deux adresses ipv6 dont l'une est celle de votre rapsberry
-- Une fois 
+- Une fois que votre ssh à cette adresse fonctionne gardez-là bien dans un fichier, elle ne dervait plus jamais changer
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
