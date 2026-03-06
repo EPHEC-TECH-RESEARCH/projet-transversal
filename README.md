@@ -106,12 +106,26 @@ Si vous êtes déjà connecté au raspberry lors de l'activation du partage, dé
 
 Remarque : il faut être connecté à Internet pour que cela fonctionne
 
+L'outil qui vous permet d'installer des packages python depuis internet s'appelle 'pip'.  Pip s'installe avec la commande :
+
+```
+sudo apt install pip
+```
+
+pip vous permet d'installer flask :
+
 ```
 mkdir transversal
 cd transversal
 python -m venv .venv
 . .venv/bin/activate
 pip install flask
+```
+
+En fonction de l'ordre dans lequel vous avez créé l'environement virtuel et pip, la dernière commande pourrait ne pas fonctionner. Utilisez alors
+
+```
+python -m pip install flask
 ```
 
 [optionnel] Vous pouvez installer aussi des trucs pour vous faciliter la vie
