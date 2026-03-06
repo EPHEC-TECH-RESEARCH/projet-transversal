@@ -42,10 +42,22 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 
 #### Sous Linux
 Sous linux, il faut se connecter en ipv6.  Hors, l'adresse n'est pas connue.  Pour la découvir, voici la procédure:
-- Ouuvrez votre terminal et tapez
+- Ouvrez votre terminal et tapez
 ```
 ip a
 ```
+- Cette commande vous donnera le nom de l'interface réseau ethernet
+**<img width="857" height="347" alt="image" src="https://github.com/user-attachments/assets/664722ea-c0a9-46a7-9fd3-8a78f4784838" />
+
+**
+- Tapez la commande
+```
+ping6 -I *enp1s0* ff02::01
+```
+en remplaçant *enp1s0* par le nom de votre interface réseau ethernet
+
+- Cette commande vous donnera deux adresses ipv6 dont l'une est celle de votre rapsberry
+- Une fois 
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
