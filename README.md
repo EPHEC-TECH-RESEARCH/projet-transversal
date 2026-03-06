@@ -82,6 +82,11 @@ Remarque : il faut être connecté à Internet pour que cela fonctionne
 
 ```
 sudo su
+mkdir transversal
+cd transversal
+python -m venv .venv
+. .venv/bin/activate
+pip install flask
 apt update
 apt dist-upgrade -y
 apt install -y python3-pip  git tmux vim bpython
