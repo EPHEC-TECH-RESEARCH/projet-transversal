@@ -42,6 +42,21 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
 ### Partager la connexion wifi de son ordinateur au raspberry
+#### Sous Linux 
+- Étape 1 : Configurer le partage sur le PC Linux (Hôte)
+  - Le but ici est de créer un "pont" logiciel qui indique à Linux de partager sa connexion via le port Ethernet.
+  - Ouvrez les Paramètres réseau (ou nm-connection-editor dans un terminal pour plus de précision).
+  - Repérez votre connexion Filaire (Ethernet).
+  - Allez dans les Paramètres / Modifier la connexion.
+  - Cliquez sur l'onglet IPv4.
+  - Dans le menu déroulant "Méthode", choisissez Partagé avec d'autres ordinateurs (ou Shared to other computers).
+  - Cliquez sur Enregistrer.
+- Étape 2 : Vérifier votre connection internet sur les raspberry
+  - Connectez-vous en ssh au raspberry
+  - Vérifiez la connection internet avec un ping d'une adresse connue (p. ex. ping ephec.be)
+ 
+
+#### Sous windows
 
 <details>
   <ol>
