@@ -16,7 +16,6 @@ Vous trouverez ici des exemples ainsi que certaines informations utiles pour les
 
 ## Connection au Raspberry Pi
 
-
 - Leur hostname est : écrit sur leur carte SD et aura la forme `pi[numero_unique]`, par exemple `pi06`
 - Leur username est : `pi`
 - Leur password est : `ephec` (vous pouvez le changer, mais on ne pourra pas vous aider si vous oubliez le nouveau)
@@ -41,29 +40,36 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 - wifi (si il y en a) : `ephecephec`
 
 #### Sous Linux
-Sous linux, il faut se connecter en ipv6.  Hors, l'adresse n'est pas connue.  Pour la découvir, voici la procédure:
+
+Sous linux, il faut se connecter en ipv6. Hors, l'adresse n'est pas connue. Pour la découvir, voici la procédure:
+
 - Ouvrez votre terminal et tapez
+
 ```
 ip a
 ```
+
 - Cette commande vous donnera le nom de l'interface réseau ethernet
   <img width="857" height="347" alt="image" src="https://github.com/user-attachments/assets/664722ea-c0a9-46a7-9fd3-8a78f4784838" />
 
 - Tapez la commande
+
 ```
 ping6 -I [enp1s0] ff02::01
 ```
+
 en remplaçant [enp1s0] par le nom de l'interface de votre propre carte réseau ethernet
 
 - Cette commande vous donnera deux adresses ipv6 dont l'une est celle de votre rapsberry
 - Une fois que votre ssh à cette adresse fonctionne, gardez-là bien dans un fichier, elle ne dervait plus jamais changer
-<img width="688" height="281" alt="image" src="https://github.com/user-attachments/assets/c0fa9c64-04f7-4951-97e1-1d892b70e3ac" />
-
+  <img width="688" height="281" alt="image" src="https://github.com/user-attachments/assets/c0fa9c64-04f7-4951-97e1-1d892b70e3ac" />
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
 ### Partager la connexion wifi de son ordinateur au raspberry
-#### Sous Linux 
+
+#### Sous Linux
+
 - Étape 1 : Configurer le partage sur le PC Linux (Hôte)
   - Le but ici est de créer un "pont" logiciel qui indique à Linux de partager sa connexion via le port Ethernet.
   - Ouvrez les Paramètres réseau (ou nm-connection-editor dans un terminal pour plus de précision).
@@ -75,7 +81,6 @@ en remplaçant [enp1s0] par le nom de l'interface de votre propre carte réseau 
 - Étape 2 : Vérifier votre connection internet sur les raspberry
   - Connectez-vous en ssh au raspberry
   - Vérifiez la connection internet avec un ping d'une adresse connue (p. ex. ping ephec.be)
- 
 
 #### Sous windows
 
@@ -96,7 +101,7 @@ en remplaçant [enp1s0] par le nom de l'interface de votre propre carte réseau 
   </ol>
   Si votre ordinateur a plusieurs ports ethernet, cocher ethernet ou ethernet 2 en fonction de votre branchement
 </details>
-
+Si vous êtes déjà connecté au raspberry lors de l'activation du partage, débranchez et rebranchez le raspberry de son alimentaion 
 ### Install Flask
 
 Remarque : il faut être connecté à Internet pour que cela fonctionne
@@ -109,7 +114,7 @@ python -m venv .venv
 pip install flask
 ```
 
-[optionnel] Vous pouvez installer aussi des trucs pour vous faciliter la vie 
+[optionnel] Vous pouvez installer aussi des trucs pour vous faciliter la vie
 
 ```
 sudo su
@@ -117,7 +122,6 @@ apt update
 apt dist-upgrade -y
 apt install -y git tmux vim
 ```
-
 
 ## Conseils
 
@@ -129,7 +133,7 @@ apt install -y git tmux vim
 
 ## Déroulement des séances
 
-### Séance 1 
+### Séance 1
 
 Intro au Python, au Raspberry Pi. Allumage d'une led ainsi que l'utilisation d'un bouton poussoir.
 Des exemples de code sont disponible dans le directory "exemples par scéance".
@@ -146,7 +150,7 @@ Note : Une difficultée de cette séance est de devoir gérer le serveur Web en 
 Note: il n'y a pas que la difficulté de 'faire marcher' le capteur, il y a aussi la difficulté lié à votre scénario.  
 Ex: une led n'est pas compliquée, mais afficher un nombre en binaire l'est plus... Un bouton n'est pas compliqué, mais une mini calculatrice l'est plus, ...
 
-### Séance 3 
+### Séance 3
 
 - Quelques nouveaux capteurs sont introduit
   - codeur rotatif
