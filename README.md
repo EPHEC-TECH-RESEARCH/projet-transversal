@@ -41,6 +41,28 @@ Pour trouver l'adresse IP de votre Raspberry Pi, le plus simple, c'est de demand
 
 ## Choses à upgrader/installer sur le raspberry pi si pas présent
 
+### Partager la connexion wifi de son ordinateur au raspberry
+
+<details>
+  <ol>
+    <li> Ouvre Panneau de configuration </li>
+    <li> Va dans Centre Réseau et partage </li>
+    <img alt="centreReseau" width="75%" src="img_share_wifi\centreReseau.png" />
+    <li> Clique sur Modifier les paramètres de la carte</li>
+    <img alt="paramètre carte" width="75%" src="img_share_wifi\settingsCarte.png" />
+    <li>Clique droit sur Wi-Fi → Propriétés</li>
+    <img alt="paramètre carte" width="75%" src="img_share_wifi\propriete.png" />
+    <li>Onglet Partage</li>
+    <img alt="paramètre carte" width="75%" src="img_share_wifi\share.png" />
+    <li>Cocher la première case:</li>
+    <img alt="paramètre carte" width="75%" src="img_share_wifi\cocher.png" />
+
+  </ol>
+  Si votre ordinateur a plusieurs ports ethernet, cocher ethernet ou ethernet 2 en fonction de votre branchement
+</details>
+
+### Install Flask
+
 Remarque : il faut être connecté à Internet pour que cela fonctionne
 
 ```
@@ -57,6 +79,7 @@ pip install Flask
 - [une fois git installé] vous pouvez faire un `git clone https://github.com/EPHEC-TECH-RESEARCH/projet-transversal.git` pour récupérer tout ce repository (ainsi que les exemples)
 - les erreurs python sont vite arrivées et la coloration syntaxique est très utile: soit codez sur votre ordinateur (dans un IDE) et copiez sur votre raspberry pi (ex: avec nano) ou bien vous pouvez aussi utiliser vim
 - avant d'éteindre le Raspberry, tapez la commande sudo shutdown now et attendez que la LED verte ait fini de clignoter
+- pour éviter de se faire déconnecter de la connexion ssh, éditer le fichier suivant : `sshd_config`. Après vous être log in, taper la commande `sudo nano /etc/ssh/sshd_config` et ajouter à la fin du fichier : `IPQoS cs0 cs0`
 
 ## Déroulement des séances
 
